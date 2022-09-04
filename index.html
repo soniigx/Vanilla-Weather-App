@@ -4,18 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,600;1,200;1,300;1,400;1,900&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
+     <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1 id="city"></h1>
+        <ul>
+          <li>Last updated: <span id="date"></span></li>
+          <li id="description"></li>
+        </ul>
+          </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img
+                src=""
+                alt="Clear"
+                id="icon"
+              />
+              <div class="d-flex weather-temperature">
+                <strong id="temperature"></strong>
+                <span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> | 
+                 <a href="#" id="fahrenheit-link">°F</a></span>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: <span id="humidity"></span></li>
+              <li>Wind: <span id="wind"></span></li>
+            </ul>
+          </div>
+        </div>
+            <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Please type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input id="search-button"
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+      </div>
     </div>
+    <small class="open-source">
+          <a
+            href="https://github.com/soniigx/Vanilla-Weather-App"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Sonia G.
+        </small>
     <script src="src/app.js"></script>
   </body>
 </html>
+
+        
