@@ -1,5 +1,24 @@
 body {
   font-family: arial, sans-serif;
+  background: rgb(255, 255, 144);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 255, 144, 1) 0%,
+    rgba(255, 198, 232, 1) 68%,
+    rgba(255, 189, 173, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 255, 144, 1) 0%,
+    rgba(255, 198, 232, 1) 68%,
+    rgba(255, 189, 173, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 144, 1) 0%,
+    rgba(255, 198, 232, 1) 68%,
+    rgba(255, 189, 173, 1) 100%
+  );
 }
 
 h1 {
@@ -7,7 +26,7 @@ h1 {
   font-weight: 600;
   text-align: left;
   margin-bottom: 2;
-  color: #f5391c;
+  color: #af4e00;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -18,14 +37,16 @@ ul {
 
 li {
   list-style: none;
-  margin: 0;
+  margin: 25px;
   padding: 0;
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
-  line-height: 25px;
+  line-height: 1px;
   color: white;
   font-family: "Montserrat", sans-serif;
+  margin-left: 1px;
+  display: inline;
 }
 
 li:first-letter {
@@ -46,11 +67,13 @@ hr {
 ul li #humidity {
   font-size: 30px;
   font-family: "Mochiy Pop One", sans-serif;
+  line-height: 1;
 }
 
 ul li #wind {
   font-size: 30px;
   font-family: "Mochiy Pop One", sans-serif;
+  line-height: 1;
 }
 
 #search-button {
@@ -80,6 +103,7 @@ ul li #wind {
 #temperature {
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
+  display: inline;
 }
 
 .weather-forecast {
@@ -114,7 +138,9 @@ ul li #wind {
 }
 
 .temperatures {
-  margin-left: 100px;
+  margin-left: 50px;
+  font-size: 25px;
+  line-height: 1;
 }
 
 .weather-app-wrapper {
@@ -126,10 +152,10 @@ ul li #wind {
     rgba(245, 227, 28, 1) 0%,
     rgba(249, 136, 37, 1) 35%,
     rgba(226, 136, 57, 1) 62%,
-    rgba(245, 227, 28, 1) 100%
+    rgba(182, 135, 30, 1) 100%
   );
   border-radius: 8px;
-  filter: drop-shadow(30px 20px 5px #7ab6fa);
+  filter: drop-shadow(20px 20px 5px #d3bf80);
 }
 .weather-app {
   max-width: 700px;
@@ -177,4 +203,59 @@ ul li #wind {
 .open-source {
   color: black;
   margin-left: 20%;
+}
+
+#date {
+  font-size: 35px;
+  margin-left: -1rem;
+  margin-top: -110px;
+  display: inline;
+}
+
+#description {
+  font-size: 35px;
+  line-height: 1;
+  margin-top: 10px;
+  display: inline;
+  margin-left: 3px;
+  padding-left: -3px;
+}
+
+#updated {
+  color: #141414;
+  font-size: 25px;
+  line-height: 2;
+  display: inline;
+}
+
+@media screen and (max-width: 960px) {
+  #date {
+    margin-left: -30px;
+    font-size: 27px;
+  }
+  #search-button {
+    font-size: 14px;
+    border-radius: 5px;
+    width: 15px;
+  }
+  #updated {
+    margin-left: 5px;
+  }
+  .temperatures {
+    margin-top: -140px;
+    margin-left: 1px;
+  }
+  ul li #humidity {
+    font-size: 27px;
+    font-family: "Mochiy Pop One", sans-serif;
+    line-height: 1;
+    margin-left: -2px;
+  }
+
+  ul li #wind {
+    font-size: 27px;
+    font-family: "Mochiy Pop One", sans-serif;
+    line-height: 1;
+    margin-left: -2px;
+  }
 }
