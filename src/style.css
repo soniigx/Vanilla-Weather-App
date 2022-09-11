@@ -3,13 +3,12 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   text-align: left;
   margin-bottom: 2;
-  color: #ffb76b;
+  color: #f5391c;
   font-family: "Montserrat", sans-serif;
-  line-height: 40px;
 }
 
 ul {
@@ -22,12 +21,11 @@ li {
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
-  line-height: 22px;
+  line-height: 25px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
 }
 
 li:first-letter {
@@ -45,20 +43,101 @@ hr {
   border: none;
 }
 
+ul li #humidity {
+  font-size: 30px;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+ul li #wind {
+  font-size: 30px;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+#search-button {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: rgb(216, 248, 126);
+  border: none;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  transition: all 0.5s;
+  font-family: "Mochiy Pop One", sans-serif;
+  color: black;
+  margin-left: -15px;
+}
+
+#fahrenheit-link {
+  color: white;
+  font-size: 20px;
+}
+
+#search-form {
+  filter: drop-shadow(5px 15px 5px #50690c);
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+#temperature {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.weather-forecast-date {
+  color: rgb(255, 255, 255);
+  font-size: 16;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.45;
+  font-size: 15px;
+}
+
+.weather-forecast-temperature-max {
+  font-size: 15px;
+}
+
+.weather-forecast-date {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+.temperatures {
+  margin-left: 100px;
+}
+
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
-  background: dodgerblue;
+  background: rgb(245, 227, 28);
+  background: linear-gradient(
+    117deg,
+    rgba(245, 227, 28, 1) 0%,
+    rgba(249, 136, 37, 1) 35%,
+    rgba(226, 136, 57, 1) 62%,
+    rgba(245, 227, 28, 1) 100%
+  );
   border-radius: 8px;
   filter: drop-shadow(30px 20px 5px #7ab6fa);
 }
 .weather-app {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
   padding: 30px;
   border: 5px solid #dadde1;
   border-radius: 8px;
-  border-color: #33cff7;
+  border-color: #a40b42;
   border-width: 7px;
 }
 
@@ -97,42 +176,5 @@ hr {
 
 .open-source {
   color: black;
-  margin-left: 23%;
-}
-
-#search-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #ffe700;
-  border: none;
-  font-size: 18px;
-  width: 190px;
-  height: 40px;
-  transition: all 0.5s;
-  font-family: "Mochiy Pop One", sans-serif;
-  color: black;
-  margin-left: -15px;
-}
-
-#fahrenheit-link {
-  color: white;
-}
-
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.weather-forecast-date {
-  font-size: 16;
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
-
-.weather-forecast-temperatures {
-  font-size: 13px;
+  margin-left: 20%;
 }
