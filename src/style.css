@@ -7,7 +7,7 @@ h1 {
   font-weight: 600;
   text-align: left;
   margin-bottom: 2;
-  color: #551fbd;
+  color: #ffb76b;
   font-family: "Montserrat", sans-serif;
   line-height: 40px;
 }
@@ -49,15 +49,17 @@ hr {
   max-width: 600px;
   margin: 30px auto;
   background: dodgerblue;
+  border-radius: 8px;
   filter: drop-shadow(30px 20px 5px #7ab6fa);
 }
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 30px;
   border: 5px solid #dadde1;
   border-radius: 8px;
-  border-color: #551fbd;
+  border-color: #33cff7;
+  border-width: 7px;
 }
 
 .overview {
@@ -66,16 +68,16 @@ hr {
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 70px;
+  width: 70px;
   filter: drop-shadow(8px 10px 5px #7ae7fa);
 }
 
 .weather-temperature strong {
   color: rgb(33, 33, 33);
-  font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  font-size: 5rem;
 }
 
 .weather-temperature units {
@@ -110,4 +112,27 @@ hr {
   font-family: "Mochiy Pop One", sans-serif;
   color: black;
   margin-left: -15px;
+}
+
+#fahrenheit-link {
+  color: white;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.weather-forecast-date {
+  font-size: 16;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
